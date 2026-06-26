@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Site</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom utilities css -->
+    <link rel = "stylesheet" href = "css/utilities.css">
+    <!-- custom main css -->
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+
+    <div class = "holder">
+        <!-- navbar -->
+        <nav class = "navbar bg-brown flex">
+            <div class = "container flex">
+                <div class = "toggler-and-category bg-brown text-white flex">
+                    <button type = "button" class = "btn navbar-show-btn text-white">
+                        <i class = "fas fa-bars"></i>
+                    </button>
+                    <div class = "category-list">
+                        <span>Category</span>
+                        <button type = "button" class = "btn category-toggler-btn text-white">
+                            <i class = "fas fa-circle-arrow-down"></i>
+                        </button>
+                    </div>
+
+                    <!-- side navbar -->
+                    <ul id = "side-navbar" class = "bg-white text-uppercase">
+                        <button type = "button" class = "btn navbar-hide-btn text-dark">
+                            <i class = "fas fa-times"></i>
+                        </button>
+                        <li><a href = "#">home</a></li>
+                        <li><a href = "#">featured</a></li>
+                        <li><a href = "#">blog</a></li>
+                        <li><a href = "#">shop</a></li>
+                        <li><a href = "#">about</a></li>
+                        <li><a href = "#">contact</a></li>
+                    </ul>
+                    <!-- end of side navbar -->
+
+                    <ul id = "category-list-items" class = "bg-white">
+                        <li><a href = "#">Small Furniture</a></li>
+                        <li><a href = "#">NIghtstands</a></li>
+                        <li><a href = "#">Dressers</a></li>
+                        <li><a href = "#">Bookcase</a></li>
+                        <li><a href = "#">Coffee Tables</a></li>
+                        <li><a href = "#">Mattresses</a></li>
+                        <li><a href = "#">Sofas</a></li>
+                        <li><a href = "#">Chairs</a></li>
+                        <li><a href = "#">Hall Trees</a></li>
+                        <li><a href = "#">Furniture Stores</a></li>
+                    </ul>
+                </div>
+
+                <!-- main navigation list -->
+                <div class = "navbar-collapse flex">
+                    <!-- nav list -->
+                    <ul class = "navbar-nav text-uppercase">
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link active-link">
+                                <span class = "nav-link-text">home</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">featured</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">shop</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">blog</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">about</span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end of nav list -->
+
+                    <!-- account icons -->
+                    <div class = "account-info">
+                        <a href = "#" class = "btn text-white">
+                            <i class = "fas fa-person"></i>
+                        </a>
+                        <a href = "#" class = "btn text-white">
+                            <i class = "fas fa-shopping-basket"></i>
+                        </a>
+                    </div>
+                    <!-- end of account icons -->
+                </div>
+                <!-- end of main navigation list -->
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- header -->
+        <header class = "header bg-light-brown flex" id = "home">
+            <div class = "container">
+                <div class = "header-content grid text-center">
+                    <div class = "header-left">
+                        <h1>Best Design of Furniture Collection</h1>
+                        <p class = "text">Elevate your space with purposeful interior design crafted to bring value and style to your home.</p>
+                        <a href = "#" class = "btn-header text-white bg-brown">shop now</a>
+                    </div>
+
+                    <div class = "header-right">
+                        <img src = "/images/bg_image.jpg" alt="">
+                    </div>
+                    <img src = "images/header-shape.png" class = "header-shape" alt="">
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- main content -->
+        <main>
+            <!-- top new products section -->
+            <section id = "new-products" class = "new-products py bg-light-grey-color-shade">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>top new products</h2>
+                        <p class = "lead">Discover handpicked, timeless furniture pieces designed to elevate your living spaces.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "new-products-content grid">
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "/images/img1.jpg" alt="">
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 Reviews)</span>
+                                </div>
+                                <p class = "name">Milano Velvet Curved Sofa</p>
+                                <div class = "price">
+                                    <span class="old text-grey">&#8377; 74,999</span>
+                                    <span class="new text-brown">&#8377; 54,999</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "/images/img2.jpg" alt="">
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 Reviews)</span>
+                                </div>
+                                <p class = "name">Abstract Travertine Stone Coffee Table</p>
+                                <div class = "price">
+                                    <span class="old text-grey">&#8377; 24,999</span>
+                                    <span class="new text-brown">&#8377; 17,499</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "/images/img3.jpg" alt="" >
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 Reviews)</span>
+                                </div>
+                                <p class = "name">Aura Sherpa Accent Chair</p>
+                                <div class = "price">
+                                    <span class="old text-grey">&#8377; 19,999</span>
+                                    <span class="new text-brown">&#8377; 13,999</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "/images/img4.webp" alt="" >
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 Reviews)</span>
+                                </div>
+                                <p class = "name">Linear Fluted 3-Drawer Dresser</p>
+                                <div class = "price">
+                                    <span class="old text-grey">&#8377; 34,999</span>
+                                    <span class="new text-brown">&#8377; 24,499</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of top new products section -->
+
+            <!-- category section -->
+            <section class = "category py bg-light-brown" id = "category">
+                <div class = "container">
+                    <div class = "category-content grid">
+                        <div class = "category-item">
+                            <img src = "/images/img5.jpeg" alt="">
+                            <div class = "category-badge bg-white text-dark flex">Luxury Living Sets</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "/images/img6.avif" alt="">
+                            <div class = "category-badge bg-white text-dark flex">Modern Curved Sofas</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "/images/img7.webp" alt="">
+                            <div class = "category-badge bg-white text-dark flex">Modular Sofa Sets</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "/images/img8.avif" alt="">
+                            <div class = "category-badge bg-white text-dark flex">L-Shaped Sectional Sofa</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "/images/img9.webp" alt="">
+                            <div class = "category-badge bg-white text-dark flex">Royal Maharaja Sets</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "/images/img10.avif" alt="">
+                            <div class = "category-badge bg-white text-dark flex">Living Room</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of category section -->
+
+            <!-- featured deals section -->
+            <section class = "featured-deals bg-light-grey-color-shade py" id = "featured-deals">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>featured deals</h2>
+                        <p class = "lead">Limited-time offers on our most-loved furniture pieces and curated room sets. Grab them before they're gone!</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "featured-deals-content grid">
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "/images/img11.webp" alt="">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Minimalist Living Room Essentials Set (Sofa + Coffee Table)</p>
+                                <div class = "price">
+                                    <span class="old text-grey">&#8377; 99,998</span>
+                                    <span class="new text-brown">&#8377; 79,999 (Save 20%)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "/images/img12.jpg" alt="">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Nordic Halo Geometric Chandelier</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">&#8377; 14,999</span>
+                                    <span class = "new text-brown">&#8377; 8,999 (40% Off - Limited Time)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "/images/img13.jpg" alt="">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Ashton Hand-Woven Wool Area Rug (6x9 ft)</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">&#8377; 21,999</span>
+                                    <span class = "new text-brown">&#8377; 14,499 (35% Off)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "/images/img14.jpg" alt="">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Osaka Solid Wood Floating Bookshelf & Display</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">&#8377; 11,999</span>
+                                    <span class = "new text-brown">&#8377; 7,499 (Special Deal)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of featured deals section -->
+
+            <!-- catalog section -->
+            <section class = "catalog bg-brown" id = "catalog">
+                <div class = "catalog-content grid text-center">
+                    <div class = "catalog-left"></div>
+                    <div class = "catalog-right text-white flex py">
+                        <div class = "section-title">
+                            <h2>modern living quarters</h2>
+                        </div>
+                        <p class = "text">Transform your home into a sanctuary of style. Our Modern Living collection brings together clean minimalist lines, rich textures, and functional craftsmanship designed perfectly for contemporary Indian homes.</p>
+                        <p class = "text">From space-saving modular layouts to statement lounge pieces, discover how effortlessly our curated designs elevate your daily living experience. Refresh your space today</p>
+                    </div>
+                </div>
+            </section>
+            <!-- end of catalog section -->
+
+            <!-- latest news section -->
+            <section class = "latest-news bg-light-grey-color-shade py" id = "latest-news">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>latest news</h2>
+                        <p class = "lead">Get inspired with the latest interior design trends, styling tips, and home makeovers from our decor experts.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "latest-news-content grid">
+                        <article class = "latest-news-item bg-white">
+                            <div class = "top">
+                                <img src = "/images/img15.jpg" alt="">
+                                <div class = "author">
+                                    <img src = "/images/img16.webp" alt="">
+                                </div>
+                            </div>
+                            <div class = "body">
+                                <span class = "date">Posted October 8, 2021</span>
+                                <h3 class = "title text-uppercase">5 Ways to Create a Luxury, Five-Star Bedroom Vibe at Home</h3>
+                                <p class = "text">Learn the secret to layering lighting, choosing the right bed frame, and using neutral tones to make your bedroom feel like a boutique hotel <span>...</span></p>
+                            </div>
+                            <div class = "bottom"k>
+                                <a href = "#" class = "text-uppercase">read more</a>
+                            </div>
+                        </article>
+
+                        <article class = "latest-news-item bg-white">
+                            <div class = "top">
+                                <img src = "/images/img17.webp" alt="">
+                                <div class = "author">
+                                    <img src = "/images/img18.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class = "body">
+                                <span class = "date">Posted November 18, 2022</span>
+                                <h3 class = "title text-uppercase">The Art of the Layout: How to Arrange Living Room Furniture</h3>
+                                <p class = "text">Struggling to place your sofa and coffee table? Our design experts break down the golden rules of spacing for maximum comfort and flow...<span>...</span></p>
+                            </div>
+                            <div class = "bottom"k>
+                                <a href = "#" class = "text-uppercase">read more</a>
+                            </div>
+                        </article>
+
+                        <article class = "latest-news-item bg-white">
+                            <div class = "top">
+                                <img src = "/images/img19.jpg" alt="">
+                                <div class = "author">
+                                    <img src = "/images/img20.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class = "body">
+                                <span class = "date">Posted March 15, 2023</span>
+                                <h3 class = "title text-uppercase">Bringing the Outdoors In: Tips for Bright & Airy Interiors</h3>
+                                <p class = "text">Discover how to maximize natural sunlight, integrate indoor plants, and choose lightweight fabrics to give your home a fresh, open feeling...<span>...</span></p>
+                            </div>
+                            <div class = "bottom"k>
+                                <a href = "#" class = "text-uppercase">read more</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- end of latest news section -->
+
+            <!-- feedback section -->
+            <section class = "feedback py bg-light-grey-color-shade" id = "feedback">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>Feedback</h2>
+                        <p class = "lead">See what our happy customers have to say about their experience with us.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "feedback-inner">
+                        <div class = "feedback-container grid">
+                            <div class = "feedback-item bg-white text-center" data-id = "1">
+                                <img src = "/images/symbol.png" class = "quote-icon" alt="">
+                                <p class = "text text-grey">"Absolutely thrilled with the Milano Velvet Curved Sofa! The fabric feels premium, and it completely transformed my living room. Delivery to Mumbai was surprisingly fast, and the installation team was incredibly professional. Highly recommend!"</p>
+                                <p>— Rajesh K., Mumbai</p>
+                                <div class = "client">
+                                    <img src = "/images/img21.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class = "feedback-item bg-white text-center" data-id = "2" id = "feedback-display">
+                                <img src = "/images/symbol.png" class = "quote-icon" alt="">
+                                <p class = "text text-grey">"Finding modern, minimalist furniture that fits perfectly in contemporary Indian apartments is tough, but this store nailed it. The Travertine coffee table is a masterpiece and looks way more expensive than it actually is!"</p>
+                                <p>— Ananya Sharma, Bangalore</p>
+                                <div class = "client">
+                                    <img src = "/images/img22.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class = "feedback-item bg-white text-center" data-id = "3">
+                                <img src = "/images/symbol.png" class = "quote-icon" alt="">
+                                <p class = "text text-grey">"Excellent customer service and top-notch craftsmanship. The space-saving designs are beautiful, durable, and highly functional. Will definitely be buying again for my bedroom remodel."</p>
+                                <p>— Vikram Malhotra, Delhi</p>
+                                <div class = "client">
+                                    <img src = "/images/img23.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "feedback-btns flex">
+                        <button class = "feedback-btn feedback-active-btn"></button>
+                        <button class = "feedback-btn"></button>
+                        <button class = "feedback-btn"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- end of feedback section -->
+
+            <!-- newsletter section -->
+            <section class = "newsletter py bg-light-grey-color-shade" id = "newsletter">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>Join Our Inner Circle</h2>
+                        <p class = "lead">Subscribe to our newsletter and get 10% off your first order. Stay updated on exclusive collections, flash sales, and expert interior styling tips.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "newsletter-content">
+                        <form>
+                            <div class = "input-group flex">
+                                <input type = "email" class = "form-control bg-light-grey" placeholder="example@gmail.com">
+                                <button type = "submit" class = "btn bg-dark text-white text-uppercase">subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- end of newsletter section -->
+        </main>
+        <!-- end of main content -->
+
+        <!-- footer -->
+        <footer class = "footer bg-light-brown" id = "footer">
+            <div class = "container">
+                <div class = "footer-content py grid text-center">
+                    <div class = "footer-item">
+                        <h3>Furnish.com</h3>
+                        <p class = "text">At Furnish.com, we believe your home should reflect your unique story. We design and craft premium, modern furniture that beautifully balances contemporary aesthetics with everyday functionality. From cozy apartments to spacious villas, we help you bring your dream spaces to life with quality you can feel.</p>
+                        <ul class = "social-links flex">
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Contact Us</h3>
+                        <p class = "text">12th Floor, Tower B, Infinite Tech Park, Sector 5, HSR Layout, Bangalore, Karnataka - 560102</p>
+                        <p class = "text">Phone: +91 80 4657 2000</p>
+                        <p class = "text">Email: support@furnish.com</p>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Recent Post</h3>
+                        <ul>
+                            <li class = "text"><a href = "#">Rooms decoration package</a></li>
+                            <li class = "text"><a href = "#">Dining Materials</a></li>
+                            <li class = "text"><a href = "#">Event Furniture</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Our Portfolio</h3>
+                        <ul>
+                            <li class = "text"><a href = "#">EFTA Design</a></li>
+                            <li class = "text"><a href = "#">County Hall Decoration</a></li>
+                            <li class = "text"><a href = "#">SOO Conference</a></li>
+                            <li class = "text"><a href = "#">LA Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+    
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>
