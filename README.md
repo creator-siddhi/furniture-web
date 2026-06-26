@@ -25,9 +25,8 @@ Link to live demo or hosting placeholder.
 
 ## 📸 Screenshots
 
-| Home Page | Product Catalog |
-|---|---|
-| ![Home Page](<img width="1920" height="8757" alt="screencapture-127-0-0-1-5500-index-html-2026-06-26-11_29_53" src="https://github.com/user-attachments/assets/f9caf09e-36d1-433c-b8d3-de817fb93666" />)
+<img width="1920" height="8757" alt="screencapture-127-0-0-1-5500-index-html-2026-06-26-11_29_53" src="https://github.com/user-attachments/assets/d55f21c1-ce5c-4fac-b773-fd5237adbafa" />
+
 
 
 ---
